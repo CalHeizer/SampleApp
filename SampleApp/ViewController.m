@@ -37,7 +37,8 @@
 //@end
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, GTNormalTableViewCellDelegate>
-
+@property (nonatomic, strong, readwrite)UITableView *tableView;
+@property (nonatomic, strong, readwrite)NSMutableArray *dataArray;
 @end
 
 @implementation ViewController
@@ -45,7 +46,10 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        
+        _dataArray = @[].mutableCopy;
+        for (int i = 0; i < 20; i++) {
+            [_dataArray addObject:@(i)];
+        }
     }
     return self;
 }
@@ -70,10 +74,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-    tableView.dataSource = self;
-    tableView.delegate = self;
-    [self.view addSubview:tableView];
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    [self.view addSubview:_tableView];
 }
 
 /**
@@ -96,7 +100,7 @@
  return 整个tableVIew中有多少个Cell
  */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return _dataArray.count;
 }
 
 
@@ -122,8 +126,11 @@
     
     CGRect rect = [tableViewCell convertRect:deleteButton.frame toView:nil];
     
+    __weak typeof(self) weakSelf = self;
     [deleteView showDeleteViewFromPoint:rect.origin clickBlock:^{
-        NSLog(@"");
+        __strong typeof(self) strongSelf = weakSelf;
+        [strongSelf.dataArray removeLastObject];
+        [strongSelf.tableView deleteRowsAtIndexPaths:@[[strongSelf.tableView indexPathForCell:tableViewCell]] withRowAnimation:UITableViewRowAnimationAutomatic];
     }];
 }
 
