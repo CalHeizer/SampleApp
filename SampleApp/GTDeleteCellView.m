@@ -40,7 +40,7 @@
     return self;
 }
 
-- (void)showDeleteViewFromPoint:(CGPoint)point clickBlock:(dispatch_block_t)clickBlock {
+- (void)showDeleteView {
 
     [[UIApplication sharedApplication].keyWindow addSubview:self];
 

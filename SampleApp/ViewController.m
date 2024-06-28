@@ -118,7 +118,8 @@
 }
 
 - (void)tableViewCell:(UITableViewCell *)tableViewCell clickDeleteButton:(UIButton *)deleteButton {
-    NSLog(@"");
+    GTDeleteCellView *deleteView = [[GTDeleteCellView alloc] initWithFrame:self.view.bounds];
+    [deleteView showDeleteView];
 }
 
 //- (void)viewDidLoad {
