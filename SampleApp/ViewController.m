@@ -35,7 +35,7 @@
 //}
 //@end
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate, GTNormalTableViewCellDelegate>
 
 @end
 
@@ -76,8 +76,8 @@
 }
 
 /**
-设置Cell的高度
-*/
+ 设置Cell的高度
+ */
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100;
 }
@@ -105,14 +105,19 @@
     
     if (!cell) {
         cell = [[GTNormalTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+        cell.delegate = self;
     }
     
     [cell layoutTableViewCell]; // 在 GTNormalTableViewCell.m 自定义的方法
-
-//    cell.textLabel.text = [NSString stringWithFormat:@"主标题 - %@", @(indexPath.row)];
-//    cell.detailTextLabel.text = @"副标题";
-//    cell.imageView.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
+    
+    //    cell.textLabel.text = [NSString stringWithFormat:@"主标题 - %@", @(indexPath.row)];
+    //    cell.detailTextLabel.text = @"副标题";
+    //    cell.imageView.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
     return cell;
+}
+
+- (void)tableViewCell:(UITableViewCell *)tableViewCell clickDeleteButton:(UIButton *)deleteButton {
+    NSLog(@"");
 }
 
 //- (void)viewDidLoad {
