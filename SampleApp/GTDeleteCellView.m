@@ -26,6 +26,10 @@
             _backgroundView = [[UIView alloc] initWithFrame:self.bounds];
             _backgroundView.backgroundColor = [UIColor blackColor];
             _backgroundView.alpha = 0.5;
+            [_backgroundView addGestureRecognizer:({
+                UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissDeleteView)];
+                tapGesture;
+            })];
             _backgroundView;
             
         })];
