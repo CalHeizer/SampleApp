@@ -119,7 +119,12 @@
 
 - (void)tableViewCell:(UITableViewCell *)tableViewCell clickDeleteButton:(UIButton *)deleteButton {
     GTDeleteCellView *deleteView = [[GTDeleteCellView alloc] initWithFrame:self.view.bounds];
-    [deleteView showDeleteView];
+    
+    CGRect rect = [tableViewCell convertRect:deleteButton.frame toView:nil];
+    
+    [deleteView showDeleteViewFromPoint:rect.origin clickBlock:^{
+        NSLog(@"");
+    }];
 }
 
 //- (void)viewDidLoad {
