@@ -25,6 +25,7 @@
 		D2143AFB2C2C4EC400607EFF /* GTNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2143AFA2C2C4EC400607EFF /* GTNormalTableViewCell.m */; };
 		D27438392C2D9B6000D00000 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D27438382C2D9B6000D00000 /* icon.bundle */; };
 		D2BF4BC82C2E915000E09AAE /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */; };
+		D2BF4BCF2C2ED01800E09AAE /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BCE2C2ED01800E09AAE /* GTDeleteCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		D27438382C2D9B6000D00000 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		D2BF4BC62C2E915000E09AAE /* GTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDetailViewController.h; sourceTree = "<group>"; };
 		D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
+		D2BF4BCD2C2ED01800E09AAE /* GTDeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDeleteCellView.h; sourceTree = "<group>"; };
+		D2BF4BCE2C2ED01800E09AAE /* GTDeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDeleteCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				D2143AFA2C2C4EC400607EFF /* GTNormalTableViewCell.m */,
 				D2BF4BC62C2E915000E09AAE /* GTDetailViewController.h */,
 				D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */,
+				D2BF4BCD2C2ED01800E09AAE /* GTDeleteCellView.h */,
+				D2BF4BCE2C2ED01800E09AAE /* GTDeleteCellView.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2BF4BC82C2E915000E09AAE /* GTDetailViewController.m in Sources */,
+				D2BF4BCF2C2ED01800E09AAE /* GTDeleteCellView.m in Sources */,
 				D2143AFB2C2C4EC400607EFF /* GTNormalTableViewCell.m in Sources */,
 				D20F13582C2AD6CF00756153 /* ViewController.m in Sources */,
 				D2143AF52C2C05BF00607EFF /* GTVideoViewController.m in Sources */,

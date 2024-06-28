@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "GTNormalTableViewCell.h"
 #import "GTDetailViewController.h"
+#import "GTDeleteCellView.h"
 
 @interface TestView : UIView
 
