@@ -35,7 +35,7 @@
         })];
 
         [self addSubview:({
-            _deleteButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+            _deleteButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
             [_deleteButton addTarget:self action:@selector(_clickButton) forControlEvents:UIControlEventTouchUpInside];
             _deleteButton.backgroundColor = [UIColor blueColor];
             _deleteButton;
@@ -48,11 +48,16 @@
 
     [[UIApplication sharedApplication].keyWindow addSubview:self];
 
-//    [UIView animateWithDuration:1.f delay:0.f usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-//             self.deleteButton.frame = CGRectMake((self.bounds.size.width - 200) / 2, (self.bounds.size.height - 200) / 2, 200, 200);
-//         } completion:^(BOOL finished) {
-//             //动画结束
-//         }];
+//    [UIView animateWithDuration:1.f animations:^{
+//        self.deleteButton.frame = CGRectMake((self.bounds.size.width - 200) / 2, (self.bounds.size.height - 200) / 2, 200, 200);
+//    }];
+    
+    [UIView animateWithDuration:1.f delay:0.f usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.deleteButton.frame = CGRectMake((self.bounds.size.width - 200) / 2, (self.bounds.size.height - 200) / 2, 200, 200);
+     } completion:^(BOOL finished) {
+         //动画结束
+         NSLog(@"");
+     }];
 
 }
 
