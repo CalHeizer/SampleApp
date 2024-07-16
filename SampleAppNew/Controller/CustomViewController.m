@@ -7,6 +7,7 @@
 
 #import "CustomViewController.h"
 
+NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
 @interface CustomViewController () <UITableViewDataSource>
 
 @end
@@ -34,7 +35,12 @@
  返回特定的indexPath的应该显示的Cell
  */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:REUSECUSTOMTABLEVIEWCELLID];
+    
+    if (!cell) {
+         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:REUSECUSTOMTABLEVIEWCELLID];
+    }
+    
     cell.textLabel.text = [NSString stringWithFormat:@"主标题 - %02ld", indexPath.row + 1];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"副标题 - %02ld", indexPath.row + 1];
     cell.detailTextLabel.textAlignment = NSTextAlignmentLeft;
