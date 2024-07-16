@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D20F13162C2A6EC000756153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F13152C2A6EC000756153 /* AppDelegate.m */; };
-		D20F131C2C2A6EC000756153 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F131B2C2A6EC000756153 /* ViewController.m */; };
-		D20F131F2C2A6EC000756153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20F131D2C2A6EC000756153 /* Main.storyboard */; };
-		D20F13212C2A6EC200756153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20F13202C2A6EC200756153 /* Assets.xcassets */; };
-		D20F13242C2A6EC200756153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20F13222C2A6EC200756153 /* LaunchScreen.storyboard */; };
-		D20F13272C2A6EC200756153 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F13262C2A6EC200756153 /* main.m */; };
 		D20F13522C2AD6CF00756153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F13512C2AD6CF00756153 /* AppDelegate.m */; };
 		D20F13552C2AD6CF00756153 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F13542C2AD6CF00756153 /* SceneDelegate.m */; };
 		D20F13582C2AD6CF00756153 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F13572C2AD6CF00756153 /* ViewController.m */; };
@@ -29,16 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D20F13112C2A6EC000756153 /* SampleAppDeprcated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppDeprcated.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D20F13142C2A6EC000756153 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D20F13152C2A6EC000756153 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D20F131A2C2A6EC000756153 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D20F131B2C2A6EC000756153 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D20F131E2C2A6EC000756153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D20F13202C2A6EC200756153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D20F13232C2A6EC200756153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D20F13252C2A6EC200756153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D20F13262C2A6EC200756153 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D20F134E2C2AD6CF00756153 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20F13502C2AD6CF00756153 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D20F13512C2AD6CF00756153 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,13 +49,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D20F130E2C2A6EC000756153 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D20F134B2C2AD6CF00756153 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,7 +62,6 @@
 		D20F13082C2A6EC000756153 = {
 			isa = PBXGroup;
 			children = (
-				D20F13132C2A6EC000756153 /* SampleAppDeprcated */,
 				D20F134F2C2AD6CF00756153 /* SampleApp */,
 				D20F13122C2A6EC000756153 /* Products */,
 			);
@@ -94,26 +70,9 @@
 		D20F13122C2A6EC000756153 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D20F13112C2A6EC000756153 /* SampleAppDeprcated.app */,
 				D20F134E2C2AD6CF00756153 /* SampleApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D20F13132C2A6EC000756153 /* SampleAppDeprcated */ = {
-			isa = PBXGroup;
-			children = (
-				D20F13142C2A6EC000756153 /* AppDelegate.h */,
-				D20F13152C2A6EC000756153 /* AppDelegate.m */,
-				D20F131A2C2A6EC000756153 /* ViewController.h */,
-				D20F131B2C2A6EC000756153 /* ViewController.m */,
-				D20F131D2C2A6EC000756153 /* Main.storyboard */,
-				D20F13202C2A6EC200756153 /* Assets.xcassets */,
-				D20F13222C2A6EC200756153 /* LaunchScreen.storyboard */,
-				D20F13252C2A6EC200756153 /* Info.plist */,
-				D20F13262C2A6EC200756153 /* main.m */,
-			);
-			path = SampleAppDeprcated;
 			sourceTree = "<group>";
 		};
 		D20F134F2C2AD6CF00756153 /* SampleApp */ = {
@@ -148,23 +107,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D20F13102C2A6EC000756153 /* SampleAppDeprcated */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D20F132A2C2A6EC200756153 /* Build configuration list for PBXNativeTarget "SampleAppDeprcated" */;
-			buildPhases = (
-				D20F130D2C2A6EC000756153 /* Sources */,
-				D20F130E2C2A6EC000756153 /* Frameworks */,
-				D20F130F2C2A6EC000756153 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SampleAppDeprcated;
-			productName = SampleApp;
-			productReference = D20F13112C2A6EC000756153 /* SampleAppDeprcated.app */;
-			productType = "com.apple.product-type.application";
-		};
 		D20F134D2C2AD6CF00756153 /* SampleApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D20F13662C2AD6D000756153 /* Build configuration list for PBXNativeTarget "SampleApp" */;
@@ -191,9 +133,6 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					D20F13102C2A6EC000756153 = {
-						CreatedOnToolsVersion = 15.2;
-					};
 					D20F134D2C2AD6CF00756153 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -212,23 +151,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D20F13102C2A6EC000756153 /* SampleAppDeprcated */,
 				D20F134D2C2AD6CF00756153 /* SampleApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D20F130F2C2A6EC000756153 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D20F13242C2A6EC200756153 /* LaunchScreen.storyboard in Resources */,
-				D20F13212C2A6EC200756153 /* Assets.xcassets in Resources */,
-				D20F131F2C2A6EC000756153 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D20F134C2C2AD6CF00756153 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,16 +171,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D20F130D2C2A6EC000756153 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D20F131C2C2A6EC000756153 /* ViewController.m in Sources */,
-				D20F13162C2A6EC000756153 /* AppDelegate.m in Sources */,
-				D20F13272C2A6EC200756153 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D20F134A2C2AD6CF00756153 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,22 +190,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D20F131D2C2A6EC000756153 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D20F131E2C2A6EC000756153 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D20F13222C2A6EC200756153 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D20F13232C2A6EC200756153 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		D20F13592C2AD6CF00756153 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -423,58 +325,6 @@
 			};
 			name = Release;
 		};
-		D20F132B2C2A6EC200756153 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SampleApp/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Francoling.SampleApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D20F132C2C2A6EC200756153 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SampleApp/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Francoling.SampleApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		D20F13642C2AD6D000756153 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -535,15 +385,6 @@
 			buildConfigurations = (
 				D20F13282C2A6EC200756153 /* Debug */,
 				D20F13292C2A6EC200756153 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D20F132A2C2A6EC200756153 /* Build configuration list for PBXNativeTarget "SampleAppDeprcated" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D20F132B2C2A6EC200756153 /* Debug */,
-				D20F132C2C2A6EC200756153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
