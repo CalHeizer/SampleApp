@@ -17,7 +17,15 @@
 		D2143AF52C2C05BF00607EFF /* GTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2143AF42C2C05BF00607EFF /* GTVideoViewController.m */; };
 		D2143AF82C2C179E00607EFF /* GTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2143AF72C2C179E00607EFF /* GTRecommendViewController.m */; };
 		D2143AFB2C2C4EC400607EFF /* GTNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2143AFA2C2C4EC400607EFF /* GTNormalTableViewCell.m */; };
-		D27438392C2D9B6000D00000 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D27438382C2D9B6000D00000 /* icon.bundle */; };
+		D2882DAB2C464F91009D4ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2882DAA2C464F91009D4ACE /* AppDelegate.m */; };
+		D2882DAE2C464F91009D4ACE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2882DAD2C464F91009D4ACE /* SceneDelegate.m */; };
+		D2882DB42C464F91009D4ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2882DB22C464F91009D4ACE /* Main.storyboard */; };
+		D2882DB62C464F92009D4ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2882DB52C464F92009D4ACE /* Assets.xcassets */; };
+		D2882DB92C464F92009D4ACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2882DB72C464F92009D4ACE /* LaunchScreen.storyboard */; };
+		D2882DBC2C464F92009D4ACE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2882DBB2C464F92009D4ACE /* main.m */; };
+		D2882DC42C465707009D4ACE /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2882DC32C465707009D4ACE /* CustomViewController.m */; };
+		D2882DC82C4657CF009D4ACE /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2882DC72C4657CF009D4ACE /* CustomTableViewCell.m */; };
+		D2882DCC2C4665EC009D4ACE /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2882DCB2C4665EC009D4ACE /* icon.bundle */; };
 		D2BF4BC82C2E915000E09AAE /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */; };
 		D2BF4BCF2C2ED01800E09AAE /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BCE2C2ED01800E09AAE /* GTDeleteCellView.m */; };
 /* End PBXBuildFile section */
@@ -41,7 +49,22 @@
 		D2143AF72C2C179E00607EFF /* GTRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTRecommendViewController.m; sourceTree = "<group>"; };
 		D2143AF92C2C4EC400607EFF /* GTNormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNormalTableViewCell.h; sourceTree = "<group>"; };
 		D2143AFA2C2C4EC400607EFF /* GTNormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNormalTableViewCell.m; sourceTree = "<group>"; };
-		D27438382C2D9B6000D00000 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
+		D2882DA72C464F91009D4ACE /* SampleAppNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2882DA92C464F91009D4ACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2882DAA2C464F91009D4ACE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2882DAC2C464F91009D4ACE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D2882DAD2C464F91009D4ACE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D2882DB32C464F91009D4ACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2882DB52C464F92009D4ACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2882DB82C464F92009D4ACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2882DBA2C464F92009D4ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2882DBB2C464F92009D4ACE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2882DC22C465707009D4ACE /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		D2882DC32C465707009D4ACE /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		D2882DC62C4657CF009D4ACE /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		D2882DC72C4657CF009D4ACE /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		D2882DCA2C4665BA009D4ACE /* video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video@2x.png"; sourceTree = "<group>"; };
+		D2882DCB2C4665EC009D4ACE /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = icon.bundle; path = "../../../Movies/geektime-ios-course/project/SampleApp/icon.bundle"; sourceTree = "<group>"; };
 		D2BF4BC62C2E915000E09AAE /* GTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDetailViewController.h; sourceTree = "<group>"; };
 		D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
 		D2BF4BCD2C2ED01800E09AAE /* GTDeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDeleteCellView.h; sourceTree = "<group>"; };
@@ -56,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2882DA42C464F91009D4ACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				D20F134F2C2AD6CF00756153 /* SampleApp */,
+				D2882DA82C464F91009D4ACE /* SampleAppNew */,
 				D20F13122C2A6EC000756153 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D20F134E2C2AD6CF00756153 /* SampleApp.app */,
+				D2882DA72C464F91009D4ACE /* SampleAppNew.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,7 +110,7 @@
 		D20F134F2C2AD6CF00756153 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				D27438382C2D9B6000D00000 /* icon.bundle */,
+				D2882DCB2C4665EC009D4ACE /* icon.bundle */,
 				D20F13502C2AD6CF00756153 /* AppDelegate.h */,
 				D20F13512C2AD6CF00756153 /* AppDelegate.m */,
 				D20F13532C2AD6CF00756153 /* SceneDelegate.h */,
@@ -104,6 +136,43 @@
 			path = SampleApp;
 			sourceTree = "<group>";
 		};
+		D2882DA82C464F91009D4ACE /* SampleAppNew */ = {
+			isa = PBXGroup;
+			children = (
+				D2882DC52C46571D009D4ACE /* View */,
+				D2882DC12C4656B6009D4ACE /* Controller */,
+				D2882DA92C464F91009D4ACE /* AppDelegate.h */,
+				D2882DAA2C464F91009D4ACE /* AppDelegate.m */,
+				D2882DAC2C464F91009D4ACE /* SceneDelegate.h */,
+				D2882DAD2C464F91009D4ACE /* SceneDelegate.m */,
+				D2882DB22C464F91009D4ACE /* Main.storyboard */,
+				D2882DCA2C4665BA009D4ACE /* video@2x.png */,
+				D2882DB52C464F92009D4ACE /* Assets.xcassets */,
+				D2882DB72C464F92009D4ACE /* LaunchScreen.storyboard */,
+				D2882DBA2C464F92009D4ACE /* Info.plist */,
+				D2882DBB2C464F92009D4ACE /* main.m */,
+			);
+			path = SampleAppNew;
+			sourceTree = "<group>";
+		};
+		D2882DC12C4656B6009D4ACE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2882DC22C465707009D4ACE /* CustomViewController.h */,
+				D2882DC32C465707009D4ACE /* CustomViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2882DC52C46571D009D4ACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2882DC62C4657CF009D4ACE /* CustomTableViewCell.h */,
+				D2882DC72C4657CF009D4ACE /* CustomTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,6 +193,23 @@
 			productReference = D20F134E2C2AD6CF00756153 /* SampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D2882DA62C464F91009D4ACE /* SampleAppNew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2882DBD2C464F92009D4ACE /* Build configuration list for PBXNativeTarget "SampleAppNew" */;
+			buildPhases = (
+				D2882DA32C464F91009D4ACE /* Sources */,
+				D2882DA42C464F91009D4ACE /* Frameworks */,
+				D2882DA52C464F91009D4ACE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleAppNew;
+			productName = SampleAppNew;
+			productReference = D2882DA72C464F91009D4ACE /* SampleAppNew.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -134,6 +220,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					D20F134D2C2AD6CF00756153 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					D2882DA62C464F91009D4ACE = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -152,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				D20F134D2C2AD6CF00756153 /* SampleApp */,
+				D2882DA62C464F91009D4ACE /* SampleAppNew */,
 			);
 		};
 /* End PBXProject section */
@@ -161,10 +251,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D27438392C2D9B6000D00000 /* icon.bundle in Resources */,
+				D2882DCC2C4665EC009D4ACE /* icon.bundle in Resources */,
 				D20F13602C2AD6D000756153 /* LaunchScreen.storyboard in Resources */,
 				D20F135D2C2AD6D000756153 /* Assets.xcassets in Resources */,
 				D20F135B2C2AD6CF00756153 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2882DA52C464F91009D4ACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2882DB92C464F92009D4ACE /* LaunchScreen.storyboard in Resources */,
+				D2882DB62C464F92009D4ACE /* Assets.xcassets in Resources */,
+				D2882DB42C464F91009D4ACE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +287,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2882DA32C464F91009D4ACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2882DC42C465707009D4ACE /* CustomViewController.m in Sources */,
+				D2882DAB2C464F91009D4ACE /* AppDelegate.m in Sources */,
+				D2882DBC2C464F92009D4ACE /* main.m in Sources */,
+				D2882DC82C4657CF009D4ACE /* CustomTableViewCell.m in Sources */,
+				D2882DAE2C464F91009D4ACE /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -202,6 +314,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				D20F135F2C2AD6D000756153 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2882DB22C464F91009D4ACE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2882DB32C464F91009D4ACE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2882DB72C464F92009D4ACE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2882DB82C464F92009D4ACE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -377,6 +505,58 @@
 			};
 			name = Release;
 		};
+		D2882DBE2C464F92009D4ACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleAppNew/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Francoling.SampleAppNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2882DBF2C464F92009D4ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleAppNew/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Francoling.SampleAppNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -394,6 +574,15 @@
 			buildConfigurations = (
 				D20F13642C2AD6D000756153 /* Debug */,
 				D20F13652C2AD6D000756153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2882DBD2C464F92009D4ACE /* Build configuration list for PBXNativeTarget "SampleAppNew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2882DBE2C464F92009D4ACE /* Debug */,
+				D2882DBF2C464F92009D4ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
