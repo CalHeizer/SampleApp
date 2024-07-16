@@ -63,7 +63,6 @@
 		D2882DC32C465707009D4ACE /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		D2882DC62C4657CF009D4ACE /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		D2882DC72C4657CF009D4ACE /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
-		D2882DCA2C4665BA009D4ACE /* video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video@2x.png"; sourceTree = "<group>"; };
 		D2882DCB2C4665EC009D4ACE /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = icon.bundle; path = "../../../Movies/geektime-ios-course/project/SampleApp/icon.bundle"; sourceTree = "<group>"; };
 		D2BF4BC62C2E915000E09AAE /* GTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDetailViewController.h; sourceTree = "<group>"; };
 		D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
@@ -146,7 +145,6 @@
 				D2882DAC2C464F91009D4ACE /* SceneDelegate.h */,
 				D2882DAD2C464F91009D4ACE /* SceneDelegate.m */,
 				D2882DB22C464F91009D4ACE /* Main.storyboard */,
-				D2882DCA2C4665BA009D4ACE /* video@2x.png */,
 				D2882DB52C464F92009D4ACE /* Assets.xcassets */,
 				D2882DB72C464F92009D4ACE /* LaunchScreen.storyboard */,
 				D2882DBA2C464F92009D4ACE /* Info.plist */,

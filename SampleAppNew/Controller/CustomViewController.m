@@ -6,9 +6,10 @@
 //
 
 #import "CustomViewController.h"
+#import "../View/CustomTableViewCell.h"
 
 NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
-@interface CustomViewController () <UITableViewDataSource>
+@interface CustomViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -19,11 +20,13 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     tableView.dataSource = self;
-//    tableView.estimatedRowHeight = 50;
-//    tableView.rowHeight = UITableViewAutomaticDimension;
+    tableView.delegate = self;
+//    tableView.estimatedRowHeight = 100;
+    tableView.rowHeight = UITableViewAutomaticDimension;
     [self.view addSubview:tableView];
 }
 
+#pragma mark - UITableViewDataSource
 /**
  返回该tableView的行数
  */
@@ -35,20 +38,25 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
  返回特定的indexPath的应该显示的Cell
  */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:REUSECUSTOMTABLEVIEWCELLID];
+    
+    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:REUSECUSTOMTABLEVIEWCELLID];
     
     if (!cell) {
-         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:REUSECUSTOMTABLEVIEWCELLID];
+         cell = [[CustomTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:REUSECUSTOMTABLEVIEWCELLID];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"主标题 - %02ld", indexPath.row + 1];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"副标题 - %02ld", indexPath.row + 1];
-    cell.detailTextLabel.textAlignment = NSTextAlignmentLeft;
-    cell.imageView.image = [UIImage imageNamed:@"video"];
-    [cell.textLabel sizeToFit];
-    [cell.detailTextLabel sizeToFit];
+    cell.titleLabel.text = [NSString stringWithFormat:@"主标题  -  %03ld", indexPath.row + 1];
+    cell.contentLabel.text = [NSString stringWithFormat:@"副标题  -  %@", @(indexPath.row + 1)];
+    
     return cell;
 }
 
+#pragma mark - UITableViewDelegate
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return 100;
+//}
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
+}
 @end

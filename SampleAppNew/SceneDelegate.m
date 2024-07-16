@@ -27,7 +27,7 @@
     
     
     
-    self.window.rootViewController = [[CustomViewController alloc] init];
+    self.window.rootViewController = ctrl;
     [self.window makeKeyAndVisible];
 }
 

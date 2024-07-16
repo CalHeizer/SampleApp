@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CustomTableViewCell : UITableViewCell
 
+@property (nonatomic, strong, readwrite) UILabel *titleLabel;
+@property (nonatomic, strong, readwrite) UILabel *contentLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END
