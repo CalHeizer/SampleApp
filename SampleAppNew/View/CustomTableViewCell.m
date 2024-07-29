@@ -15,10 +15,14 @@
 
 @implementation CustomTableViewCell
 - (instancetype)init {
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
+
     return [self initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
+
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         UIImageView *leftImageView = [[UIImageView alloc] init];
@@ -48,8 +52,11 @@
 }
 
 - (void)layoutSubviews {
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
+
     [super layoutSubviews]; // 非常重要，没有这句话会导致Cell的分割线显示不正确
-    self.avatarImageView.frame = CGRectMake(self.contentView.bounds.origin.x + 30, self.contentView.bounds.origin.y + 30, 70, 70);
+//    self.avatarImageView.frame = CGRectMake(self.contentView.bounds.origin.x + 30, self.contentView.bounds.origin.y + 30, 70, 70);
+    self.avatarImageView.frame = CGRectMake(self.contentView.bounds.origin.x + 30, (self.contentView.bounds.size.height - self.avatarImageView.bounds.size.height) / 2, 70, 70);
     
     [self.titleLabel sizeToFit];
     self.titleLabel.frame = CGRectMake(self.avatarImageView.frame.origin.x + self.avatarImageView.frame.size.width + 30,
@@ -65,6 +72,7 @@
 // cell 里重写 sizeThatFits:，根据 size.width 计算高度，系统会用返回的 height 作为 cell 最终的高度
 // 当走到这个方法时，cellForRow 已经调用完了，所以 cell 的数据已经被正确设置好
 - (CGSize)sizeThatFits:(CGSize)size {
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
 
     CGFloat height = [self.contentView sizeThatFits:CGSizeMake(size.width, CGFLOAT_MAX)].height;
     return CGSizeMake(size.width, height);

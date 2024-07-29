@@ -16,9 +16,12 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
 @implementation CustomViewController
 
 - (void)viewDidLoad {
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
+
     [super viewDidLoad];
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+//    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     tableView.dataSource = self;
     tableView.delegate = self;
 //    tableView.estimatedRowHeight = 100;
@@ -27,17 +30,31 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
 }
 
 #pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
+    return 2;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s %ld", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__, section);
+    return [NSString stringWithFormat:@"%02ld", section];
+}
+
 /**
  返回该tableView的行数
  */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 200;
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
+
+    return 5;
 }
 
 /**
  返回特定的indexPath的应该显示的Cell
  */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
+
     
     CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:REUSECUSTOMTABLEVIEWCELLID];
     
@@ -57,6 +74,13 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
 //}
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s, IndexPath: %@", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__, indexPath);
+
     return 100;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s %ld", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__, section);
+    return 5;
 }
 @end
