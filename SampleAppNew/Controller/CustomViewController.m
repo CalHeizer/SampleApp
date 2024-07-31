@@ -23,6 +23,8 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
     
 //    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    [tableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:NSStringFromClass([CustomTableViewCell class])];
+    
     tableView.dataSource = self;
     tableView.delegate = self;
 //    tableView.estimatedRowHeight = 100;
@@ -59,11 +61,7 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
     NSLog(@"[Debug] Instance: %@, Method: %s, IndexPath: %@", self, __PRETTY_FUNCTION__, indexPath);
 
     
-    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:REUSECUSTOMTABLEVIEWCELLID];
-    
-    if (!cell) {
-         cell = [[CustomTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:REUSECUSTOMTABLEVIEWCELLID];
-    }
+    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([CustomTableViewCell class])];
     
     cell.titleLabel.text = [NSString stringWithFormat:@"主标题  -  %03ld", indexPath.row + 1];
     cell.contentLabel.text = [NSString stringWithFormat:@"副标题  -  %@", @(indexPath.row + 1)];
