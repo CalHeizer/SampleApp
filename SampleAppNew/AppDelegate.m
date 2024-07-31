@@ -15,7 +15,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
+    NSLog(@"[Debug] Instance: %@, Method: %s", self, __PRETTY_FUNCTION__);
 
     // Override point for customization after application launch.
     return YES;
@@ -26,7 +26,7 @@
 
 
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
+    NSLog(@"[Debug] Instance: %@, Method: %s", self, __PRETTY_FUNCTION__);
 
     // Called when a new scene session is being created.
     // Use this method to select a configuration to create the new scene with.
@@ -35,7 +35,7 @@
 
 
 - (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);
+    NSLog(@"[Debug] Instance: %@, Method: %s", self, __PRETTY_FUNCTION__);
 
     // Called when the user discards a scene session.
     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
