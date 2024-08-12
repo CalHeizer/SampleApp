@@ -27,7 +27,7 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
     
     tableView.dataSource = self;
     tableView.delegate = self;
-//    tableView.estimatedRowHeight = 100;
+    tableView.estimatedRowHeight = 100;
     tableView.rowHeight = UITableViewAutomaticDimension;
     [self.view addSubview:tableView];
 }
@@ -72,15 +72,15 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"[Debug] Instance: %@, Method: %s, IndexPath: %@", self, __PRETTY_FUNCTION__, indexPath);
-
-    return 100;
+//    return 100;
+    return indexPath.row % 2 == 0 ? 100 : 70;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"[Debug] Instance: %@, Method: %s, IndexPath: %@", self, __PRETTY_FUNCTION__, indexPath);
-
-    return 100;
-}
+//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NSLog(@"[Debug] Instance: %@, Method: %s, IndexPath: %@", self, __PRETTY_FUNCTION__, indexPath);
+//
+//    return 100;
+//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     NSLog(@"[Debug] Instance: %@, Method: %s %ld", self, __PRETTY_FUNCTION__, section);
