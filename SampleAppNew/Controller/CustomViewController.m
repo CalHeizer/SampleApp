@@ -7,6 +7,7 @@
 
 #import "CustomViewController.h"
 #import "../View/CustomTableViewCell.h"
+#import "CustomWebViewController.h"
 
 NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
 @interface CustomViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -61,6 +62,7 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
     NSLog(@"[Debug] Instance: %@, Method: %s, IndexPath: %@", self, __PRETTY_FUNCTION__, indexPath);
 
     
+//    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([CustomTableViewCell class])];
     CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([CustomTableViewCell class])];
     
     cell.titleLabel.text = [NSString stringWithFormat:@"主标题  -  %03ld", indexPath.row + 1];
@@ -85,5 +87,20 @@ NSString *REUSECUSTOMTABLEVIEWCELLID = @"REUSECUSTOMTABLEVIEWCELLID";
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     NSLog(@"[Debug] Instance: %@, Method: %s %ld", self, __PRETTY_FUNCTION__, section);
     return 5;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"[Debug] Instance: %@, Method: %s, IndexPath: %@", self, __PRETTY_FUNCTION__, indexPath);
+    CustomWebViewController *webViewController = [[CustomWebViewController alloc] init];
+    webViewController.title = [NSString stringWithFormat:@"webView at %@ - %@", @(indexPath.section), [NSNumber numberWithInteger:(indexPath.row + 1)]];
+    webViewController.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.navigationController pushViewController:webViewController animated:YES];
+    // 如果不在SceneDelegate设置window.rootViewController = navigationCtrl; 而是用下面设置，则点击cell后以卡片状态从下到上展示webViewCtrl
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:webViewController];
+//    [self presentViewController:navigationController animated:YES completion:nil];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES]; // 取消cell的选中状态
 }
 @end

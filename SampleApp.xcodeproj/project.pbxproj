@@ -17,6 +17,7 @@
 		D2143AF52C2C05BF00607EFF /* GTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2143AF42C2C05BF00607EFF /* GTVideoViewController.m */; };
 		D2143AF82C2C179E00607EFF /* GTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2143AF72C2C179E00607EFF /* GTRecommendViewController.m */; };
 		D2143AFB2C2C4EC400607EFF /* GTNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2143AFA2C2C4EC400607EFF /* GTNormalTableViewCell.m */; };
+		D2274F5B2C6CD00300750F44 /* CustomWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2274F5A2C6CD00300750F44 /* CustomWebViewController.m */; };
 		D23B81532C53C88200D86A53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D23B81522C53C88200D86A53 /* AppDelegate.m */; };
 		D23B81562C53C88200D86A53 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D23B81552C53C88200D86A53 /* SceneDelegate.m */; };
 		D23B81592C53C88200D86A53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23B81582C53C88200D86A53 /* ViewController.m */; };
@@ -56,6 +57,8 @@
 		D2143AF72C2C179E00607EFF /* GTRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTRecommendViewController.m; sourceTree = "<group>"; };
 		D2143AF92C2C4EC400607EFF /* GTNormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNormalTableViewCell.h; sourceTree = "<group>"; };
 		D2143AFA2C2C4EC400607EFF /* GTNormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNormalTableViewCell.m; sourceTree = "<group>"; };
+		D2274F592C6CD00300750F44 /* CustomWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomWebViewController.h; sourceTree = "<group>"; };
+		D2274F5A2C6CD00300750F44 /* CustomWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomWebViewController.m; sourceTree = "<group>"; };
 		D23B814F2C53C88200D86A53 /* Demo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23B81512C53C88200D86A53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D23B81522C53C88200D86A53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 			children = (
 				D2882DC22C465707009D4ACE /* CustomViewController.h */,
 				D2882DC32C465707009D4ACE /* CustomViewController.m */,
+				D2274F592C6CD00300750F44 /* CustomWebViewController.h */,
+				D2274F5A2C6CD00300750F44 /* CustomWebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 				D2882DAB2C464F91009D4ACE /* AppDelegate.m in Sources */,
 				D2882DBC2C464F92009D4ACE /* main.m in Sources */,
 				D2882DC82C4657CF009D4ACE /* CustomTableViewCell.m in Sources */,
+				D2274F5B2C6CD00300750F44 /* CustomWebViewController.m in Sources */,
 				D2882DAE2C464F91009D4ACE /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,9 +27,9 @@
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
     self.window.frame = windowScene.coordinateSpace.bounds;
     
+    UINavigationController *navigationCtrl = [[UINavigationController alloc] initWithRootViewController:ctrl];
     
-    
-    self.window.rootViewController = ctrl;
+    self.window.rootViewController = navigationCtrl;
     [self.window makeKeyAndVisible];
 }
 
