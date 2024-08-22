@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "ViewController.h"
+#import "GTNewsViewController.h"
 #import "GTVideoViewController.h"
 #import "GTRecommendViewController.h"
 
@@ -27,35 +27,23 @@
     
     UITabBarController *tabbarController = [[UITabBarController alloc] init];
     
-    ViewController *viewController = [[ViewController alloc] init];
-    
-    
-//    UIViewController *controller1 = [[UIViewController alloc] init];
-//    controller1.view.backgroundColor = [UIColor redColor];
-    viewController.tabBarItem.title = @"新闻";
-    viewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
-    viewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
+    GTNewsViewController *newsViewController = [[GTNewsViewController alloc] init];
+    newsViewController.tabBarItem.title = @"新闻";
+    newsViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
+    newsViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
     
     GTVideoViewController *videoController = [[GTVideoViewController alloc] init];
-//    videoController.view.backgroundColor = [UIColor whiteColor];
-//    videoController.tabBarItem.title = @"视频";
-//    videoController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
-//    videoController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/video_selected@2x.png"];
     
     GTRecommendViewController *recommendController = [[GTRecommendViewController alloc] init];
-//    recommendController.view.backgroundColor = [UIColor blueColor];
-//    recommendController.tabBarItem.title = @"推荐";
-//    recommendController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/like@2x.png"];
-//    recommendController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/like_selected@2x.png"];
     
-    UIViewController *controller4 = [[UIViewController alloc] init];
-    controller4.view.backgroundColor = [UIColor greenColor];
-    controller4.tabBarItem.title = @"我的";
-    controller4.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
-    controller4.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
+    UIViewController *mineController = [[UIViewController alloc] init];
+    mineController.view.backgroundColor = [UIColor greenColor];
+    mineController.tabBarItem.title = @"我的";
+    mineController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
+    mineController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
     
     // 将四个页面的 UIViewController 按顺序加入到 UITabBarController 之中
-    [tabbarController setViewControllers: @[viewController, videoController, recommendController, controller4]];
+    [tabbarController setViewControllers: @[newsViewController, videoController, recommendController, mineController]];
     
     tabbarController.delegate = self;
     

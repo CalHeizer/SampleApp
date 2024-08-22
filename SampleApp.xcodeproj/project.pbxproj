@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D20F13522C2AD6CF00756153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F13512C2AD6CF00756153 /* AppDelegate.m */; };
 		D20F13552C2AD6CF00756153 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F13542C2AD6CF00756153 /* SceneDelegate.m */; };
-		D20F13582C2AD6CF00756153 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F13572C2AD6CF00756153 /* ViewController.m */; };
+		D20F13582C2AD6CF00756153 /* GTNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F13572C2AD6CF00756153 /* GTNewsViewController.m */; };
 		D20F135B2C2AD6CF00756153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20F13592C2AD6CF00756153 /* Main.storyboard */; };
 		D20F135D2C2AD6D000756153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20F135C2C2AD6D000756153 /* Assets.xcassets */; };
 		D20F13602C2AD6D000756153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20F135E2C2AD6D000756153 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		D2274F5B2C6CD00300750F44 /* CustomWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2274F5A2C6CD00300750F44 /* CustomWebViewController.m */; };
 		D23B81532C53C88200D86A53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D23B81522C53C88200D86A53 /* AppDelegate.m */; };
 		D23B81562C53C88200D86A53 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D23B81552C53C88200D86A53 /* SceneDelegate.m */; };
-		D23B81592C53C88200D86A53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23B81582C53C88200D86A53 /* ViewController.m */; };
+		D23B81592C53C88200D86A53 /* GTNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23B81582C53C88200D86A53 /* GTNewsViewController.m */; };
 		D23B815C2C53C88200D86A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23B815A2C53C88200D86A53 /* Main.storyboard */; };
 		D23B815E2C53C88400D86A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23B815D2C53C88400D86A53 /* Assets.xcassets */; };
 		D23B81612C53C88400D86A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23B815F2C53C88400D86A53 /* LaunchScreen.storyboard */; };
@@ -44,8 +44,8 @@
 		D20F13512C2AD6CF00756153 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D20F13532C2AD6CF00756153 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		D20F13542C2AD6CF00756153 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		D20F13562C2AD6CF00756153 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D20F13572C2AD6CF00756153 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D20F13562C2AD6CF00756153 /* GTNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNewsViewController.h; sourceTree = "<group>"; };
+		D20F13572C2AD6CF00756153 /* GTNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNewsViewController.m; sourceTree = "<group>"; };
 		D20F135A2C2AD6CF00756153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D20F135C2C2AD6D000756153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20F135F2C2AD6D000756153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 		D23B81522C53C88200D86A53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D23B81542C53C88200D86A53 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		D23B81552C53C88200D86A53 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		D23B81572C53C88200D86A53 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D23B81582C53C88200D86A53 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D23B81572C53C88200D86A53 /* GTNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNewsViewController.h; sourceTree = "<group>"; };
+		D23B81582C53C88200D86A53 /* GTNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNewsViewController.m; sourceTree = "<group>"; };
 		D23B815B2C53C88200D86A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D23B815D2C53C88400D86A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D23B81602C53C88400D86A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -141,12 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				D2882DCB2C4665EC009D4ACE /* icon.bundle */,
+				D2A0D0452C76120D00BBB05A /* NewsController */,
 				D20F13502C2AD6CF00756153 /* AppDelegate.h */,
 				D20F13512C2AD6CF00756153 /* AppDelegate.m */,
 				D20F13532C2AD6CF00756153 /* SceneDelegate.h */,
 				D20F13542C2AD6CF00756153 /* SceneDelegate.m */,
-				D20F13562C2AD6CF00756153 /* ViewController.h */,
-				D20F13572C2AD6CF00756153 /* ViewController.m */,
 				D20F13592C2AD6CF00756153 /* Main.storyboard */,
 				D20F135C2C2AD6D000756153 /* Assets.xcassets */,
 				D20F135E2C2AD6D000756153 /* LaunchScreen.storyboard */,
@@ -156,12 +155,6 @@
 				D2143AF42C2C05BF00607EFF /* GTVideoViewController.m */,
 				D2143AF62C2C179E00607EFF /* GTRecommendViewController.h */,
 				D2143AF72C2C179E00607EFF /* GTRecommendViewController.m */,
-				D2143AF92C2C4EC400607EFF /* GTNormalTableViewCell.h */,
-				D2143AFA2C2C4EC400607EFF /* GTNormalTableViewCell.m */,
-				D2BF4BC62C2E915000E09AAE /* GTDetailViewController.h */,
-				D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */,
-				D2BF4BCD2C2ED01800E09AAE /* GTDeleteCellView.h */,
-				D2BF4BCE2C2ED01800E09AAE /* GTDeleteCellView.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -173,8 +166,8 @@
 				D23B81522C53C88200D86A53 /* AppDelegate.m */,
 				D23B81542C53C88200D86A53 /* SceneDelegate.h */,
 				D23B81552C53C88200D86A53 /* SceneDelegate.m */,
-				D23B81572C53C88200D86A53 /* ViewController.h */,
-				D23B81582C53C88200D86A53 /* ViewController.m */,
+				D23B81572C53C88200D86A53 /* GTNewsViewController.h */,
+				D23B81582C53C88200D86A53 /* GTNewsViewController.m */,
 				D23B815A2C53C88200D86A53 /* Main.storyboard */,
 				D23B815D2C53C88400D86A53 /* Assets.xcassets */,
 				D23B815F2C53C88400D86A53 /* LaunchScreen.storyboard */,
@@ -220,6 +213,29 @@
 				D2882DC72C4657CF009D4ACE /* CustomTableViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D2A0D0452C76120D00BBB05A /* NewsController */ = {
+			isa = PBXGroup;
+			children = (
+				D2A0D0462C76125000BBB05A /* detail */,
+				D20F13562C2AD6CF00756153 /* GTNewsViewController.h */,
+				D20F13572C2AD6CF00756153 /* GTNewsViewController.m */,
+				D2143AF92C2C4EC400607EFF /* GTNormalTableViewCell.h */,
+				D2143AFA2C2C4EC400607EFF /* GTNormalTableViewCell.m */,
+				D2BF4BCD2C2ED01800E09AAE /* GTDeleteCellView.h */,
+				D2BF4BCE2C2ED01800E09AAE /* GTDeleteCellView.m */,
+			);
+			path = NewsController;
+			sourceTree = "<group>";
+		};
+		D2A0D0462C76125000BBB05A /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF4BC62C2E915000E09AAE /* GTDetailViewController.h */,
+				D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */,
+			);
+			path = detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +374,7 @@
 				D2BF4BC82C2E915000E09AAE /* GTDetailViewController.m in Sources */,
 				D2BF4BCF2C2ED01800E09AAE /* GTDeleteCellView.m in Sources */,
 				D2143AFB2C2C4EC400607EFF /* GTNormalTableViewCell.m in Sources */,
-				D20F13582C2AD6CF00756153 /* ViewController.m in Sources */,
+				D20F13582C2AD6CF00756153 /* GTNewsViewController.m in Sources */,
 				D2143AF52C2C05BF00607EFF /* GTVideoViewController.m in Sources */,
 				D2143AF82C2C179E00607EFF /* GTRecommendViewController.m in Sources */,
 				D20F13522C2AD6CF00756153 /* AppDelegate.m in Sources */,
@@ -371,7 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D23B81592C53C88200D86A53 /* ViewController.m in Sources */,
+				D23B81592C53C88200D86A53 /* GTNewsViewController.m in Sources */,
 				D23B81532C53C88200D86A53 /* AppDelegate.m in Sources */,
 				D23B81642C53C88400D86A53 /* main.m in Sources */,
 				D23B81562C53C88200D86A53 /* SceneDelegate.m in Sources */,
