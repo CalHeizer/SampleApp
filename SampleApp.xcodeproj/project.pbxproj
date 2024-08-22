@@ -34,6 +34,7 @@
 		D2882DC42C465707009D4ACE /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2882DC32C465707009D4ACE /* CustomViewController.m */; };
 		D2882DC82C4657CF009D4ACE /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2882DC72C4657CF009D4ACE /* CustomTableViewCell.m */; };
 		D2882DCC2C4665EC009D4ACE /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2882DCB2C4665EC009D4ACE /* icon.bundle */; };
+		D2A0D04A2C77113A00BBB05A /* GTListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A0D0492C77113A00BBB05A /* GTListLoader.m */; };
 		D2BF4BC82C2E915000E09AAE /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */; };
 		D2BF4BCF2C2ED01800E09AAE /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BCE2C2ED01800E09AAE /* GTDeleteCellView.m */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,8 @@
 		D2882DC62C4657CF009D4ACE /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		D2882DC72C4657CF009D4ACE /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		D2882DCB2C4665EC009D4ACE /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = icon.bundle; path = "../../../Movies/geektime-ios-course/project/SampleApp/icon.bundle"; sourceTree = "<group>"; };
+		D2A0D0482C77113A00BBB05A /* GTListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListLoader.h; sourceTree = "<group>"; };
+		D2A0D0492C77113A00BBB05A /* GTListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListLoader.m; sourceTree = "<group>"; };
 		D2BF4BC62C2E915000E09AAE /* GTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDetailViewController.h; sourceTree = "<group>"; };
 		D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
 		D2BF4BCD2C2ED01800E09AAE /* GTDeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDeleteCellView.h; sourceTree = "<group>"; };
@@ -140,12 +143,13 @@
 		D20F134F2C2AD6CF00756153 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				D2882DCB2C4665EC009D4ACE /* icon.bundle */,
+				D2A0D0472C77110400BBB05A /* loader */,
 				D2A0D0452C76120D00BBB05A /* NewsController */,
 				D20F13502C2AD6CF00756153 /* AppDelegate.h */,
 				D20F13512C2AD6CF00756153 /* AppDelegate.m */,
 				D20F13532C2AD6CF00756153 /* SceneDelegate.h */,
 				D20F13542C2AD6CF00756153 /* SceneDelegate.m */,
+				D2882DCB2C4665EC009D4ACE /* icon.bundle */,
 				D20F13592C2AD6CF00756153 /* Main.storyboard */,
 				D20F135C2C2AD6D000756153 /* Assets.xcassets */,
 				D20F135E2C2AD6D000756153 /* LaunchScreen.storyboard */,
@@ -236,6 +240,15 @@
 				D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */,
 			);
 			path = detail;
+			sourceTree = "<group>";
+		};
+		D2A0D0472C77110400BBB05A /* loader */ = {
+			isa = PBXGroup;
+			children = (
+				D2A0D0482C77113A00BBB05A /* GTListLoader.h */,
+				D2A0D0492C77113A00BBB05A /* GTListLoader.m */,
+			);
+			path = loader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +389,7 @@
 				D2143AFB2C2C4EC400607EFF /* GTNormalTableViewCell.m in Sources */,
 				D20F13582C2AD6CF00756153 /* GTNewsViewController.m in Sources */,
 				D2143AF52C2C05BF00607EFF /* GTVideoViewController.m in Sources */,
+				D2A0D04A2C77113A00BBB05A /* GTListLoader.m in Sources */,
 				D2143AF82C2C179E00607EFF /* GTRecommendViewController.m in Sources */,
 				D20F13522C2AD6CF00756153 /* AppDelegate.m in Sources */,
 				D20F13632C2AD6D000756153 /* main.m in Sources */,
