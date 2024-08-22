@@ -37,9 +37,12 @@
 		D2A0D04A2C77113A00BBB05A /* GTListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A0D0492C77113A00BBB05A /* GTListLoader.m */; };
 		D2BF4BC82C2E915000E09AAE /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */; };
 		D2BF4BCF2C2ED01800E09AAE /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BCE2C2ED01800E09AAE /* GTDeleteCellView.m */; };
+		D7620FC809D29A2E80148F4C /* libPods-SampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F69203AEAA22C3CBB8C4E73 /* libPods-SampleApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F69203AEAA22C3CBB8C4E73 /* libPods-SampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE120D92C84DE0C8D5DA3A2 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		D20F134E2C2AD6CF00756153 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20F13502C2AD6CF00756153 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D20F13512C2AD6CF00756153 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 		D2BF4BC72C2E915000E09AAE /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
 		D2BF4BCD2C2ED01800E09AAE /* GTDeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDeleteCellView.h; sourceTree = "<group>"; };
 		D2BF4BCE2C2ED01800E09AAE /* GTDeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDeleteCellView.m; sourceTree = "<group>"; };
+		D9D516F98BF19DAAC2F3E65A /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7620FC809D29A2E80148F4C /* libPods-SampleApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +125,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DC58230C49D0449027D5B30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F69203AEAA22C3CBB8C4E73 /* libPods-SampleApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		577A3BEC5B18C5DAFF1A1272 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9D516F98BF19DAAC2F3E65A /* Pods-SampleApp.debug.xcconfig */,
+				8DE120D92C84DE0C8D5DA3A2 /* Pods-SampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D20F13082C2A6EC000756153 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +150,8 @@
 				D2882DA82C464F91009D4ACE /* SampleAppNew */,
 				D23B81502C53C88200D86A53 /* Demo1 */,
 				D20F13122C2A6EC000756153 /* Products */,
+				577A3BEC5B18C5DAFF1A1272 /* Pods */,
+				1DC58230C49D0449027D5B30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D20F13662C2AD6D000756153 /* Build configuration list for PBXNativeTarget "SampleApp" */;
 			buildPhases = (
+				3250437D60889CF2568436B5 /* [CP] Check Pods Manifest.lock */,
 				D20F134A2C2AD6CF00756153 /* Sources */,
 				D20F134B2C2AD6CF00756153 /* Frameworks */,
 				D20F134C2C2AD6CF00756153 /* Resources */,
@@ -378,6 +404,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3250437D60889CF2568436B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D20F134A2C2AD6CF00756153 /* Sources */ = {
@@ -593,6 +644,7 @@
 		};
 		D20F13642C2AD6D000756153 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D516F98BF19DAAC2F3E65A /* Pods-SampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -619,6 +671,7 @@
 		};
 		D20F13652C2AD6D000756153 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE120D92C84DE0C8D5DA3A2 /* Pods-SampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

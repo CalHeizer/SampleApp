@@ -6,7 +6,7 @@
 //
 
 #import "GTListLoader.h"
-
+#import <AFNetworking.h>
 
 /// 列表请求
 @implementation GTListLoader
@@ -39,31 +39,42 @@
 //    NSURLRequest *listRequest = [NSURLRequest requestWithURL:listURL];
     
     NSURL *listURL = components.URL;
-    NSURLRequest *listRequest = [NSURLRequest requestWithURL:listURL];
+    __unused NSURLRequest *listRequest = [NSURLRequest requestWithURL:listURL];
     
-    NSURLSession *session = [NSURLSession sharedSession];
+    NSString *urlString = components.URL.absoluteString;
+    [[AFHTTPSessionManager manager] GET:urlString parameters:nil headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            NSLog(@"");
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            NSLog(@"");
+        }];
     
-    NSURLSessionDataTask *dataTask = [session dataTaskWithURL:listURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error) {
-            // 网络请求异常处理
-            NSLog(@"请求异常");
-        } else {
-            NSError *jsonError;
-            NSDictionary *responseResult = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
-            if (!jsonError) {
-                // 网络请求成功处理
-                // NSLog(@"%@", [responseResult objectForKey:@"error_code"]);
-                NSLog(@"%@", responseResult);
-            } else {
-                // 解析结果异常处理
-                NSLog(@"解析结果异常");
-            }
-        }
-    }];
     
-    [dataTask resume];
     
-    NSLog(@"");
+//    NSURLSession *session = [NSURLSession sharedSession];
+//    
+//    NSURLSessionDataTask *dataTask = [session dataTaskWithURL:listURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        if (error) {
+//            // 网络请求异常处理
+//            NSLog(@"请求异常");
+//        } else {
+//            NSError *jsonError;
+//            NSDictionary *responseResult = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
+//            if (!jsonError) {
+//                // 网络请求成功处理
+//                // NSLog(@"%@", [responseResult objectForKey:@"error_code"]);
+//                NSLog(@"%@", responseResult);
+//            } else {
+//                // 解析结果异常处理
+//                NSLog(@"解析结果异常");
+//            }
+//        }
+//    }];
+//    
+//    [dataTask resume];
+//    
+//    NSLog(@"");
 }
 
 
