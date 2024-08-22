@@ -5,7 +5,7 @@
 //  Created by FrancoLing on 2024/6/25.
 //
 
-#import "ViewController.h"
+#import "GTNewsViewController.h"
 #import "GTNormalTableViewCell.h"
 #import "GTDetailViewController.h"
 #import "GTDeleteCellView.h"
@@ -36,12 +36,14 @@
 //}
 //@end
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate, GTNormalTableViewCellDelegate>
+@interface GTNewsViewController () <UITableViewDataSource, UITableViewDelegate, GTNormalTableViewCellDelegate>
 @property (nonatomic, strong, readwrite)UITableView *tableView;
 @property (nonatomic, strong, readwrite)NSMutableArray *dataArray;
 @end
 
-@implementation ViewController
+@implementation GTNewsViewController
+
+#pragma mark - life cycle
 
 - (instancetype)init {
     self = [super init];
@@ -80,6 +82,7 @@
     [self.view addSubview:_tableView];
 }
 
+#pragma mark - UITableViewDelegate
 /**
  设置Cell的高度
  */
@@ -115,9 +118,6 @@
     
     [cell layoutTableViewCell]; // 在 GTNormalTableViewCell.m 自定义的方法
     
-    //    cell.textLabel.text = [NSString stringWithFormat:@"主标题 - %@", @(indexPath.row)];
-    //    cell.detailTextLabel.text = @"副标题";
-    //    cell.imageView.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
     return cell;
 }
 
@@ -133,48 +133,5 @@
         [strongSelf.tableView deleteRowsAtIndexPaths:@[[strongSelf.tableView indexPathForCell:tableViewCell]] withRowAnimation:UITableViewRowAnimationAutomatic];
     }];
 }
-
-//- (void)viewDidLoad {
-//    [super viewDidLoad];
-//    // Do any additional setup after loading the view.
-//    self.view.backgroundColor = [UIColor whiteColor];
-//
-//    TestView *view2 = [[TestView alloc] init];
-//    view2.backgroundColor = [UIColor greenColor];
-//    view2.frame = CGRectMake(150, 150, 100, 100);
-//    [self.view addSubview:view2];
-//    
-//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushController)];
-//    [view2 addGestureRecognizer:tapGesture];
-//
-////    UIView *view = [[UIView alloc] init];
-////    view.backgroundColor = [UIColor redColor];
-////    view.frame = CGRectMake(100, 100, 100, 100);
-////    [self.view addSubview:view];
-//    
-//    
-//    //    [self.view addSubview:({
-//    //        UILabel *label = [[UILabel alloc] init];
-//    //        label.text = @"Hello World";
-//    //        [label sizeToFit];
-//    //        label.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height / 2);
-//    //        label;
-//    //    })];
-//}
-
-//- (void)pushController {
-//    
-//    UIViewController *viewController = [[UIViewController alloc] init];
-//    viewController.view.backgroundColor = [UIColor whiteColor];
-//    viewController.navigationItem.title = @"内容";
-//    
-//    viewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
-//                                                        initWithTitle:@"右侧标题"
-//                                                        style:UIBarButtonItemStylePlain
-//                                                        target:self 
-//                                                        action:nil];
-//    
-//    [self.navigationController pushViewController:viewController animated:YES];
-//}
 
 @end

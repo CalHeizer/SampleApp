@@ -5,13 +5,13 @@
 //  Created by FrancoLing on 2024/7/26.
 //
 
-#import "ViewController.h"
+#import "GTNewsViewController.h"
 
-@interface ViewController ()
+@interface GTNewsViewController ()
 
 @end
 
-@implementation ViewController
+@implementation GTNewsViewController
 
 - (void)viewDidLoad {
     NSLog(@"[Debug] Class: %@, Instance: %@, Method: %s", NSStringFromClass([self class]), self, __PRETTY_FUNCTION__);

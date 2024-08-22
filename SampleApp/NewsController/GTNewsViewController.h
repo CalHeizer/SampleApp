@@ -7,7 +7,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+/**
+ 新闻Tab对应的对应的Controller
+ */
+@interface GTNewsViewController : UIViewController
 
 
 @end
