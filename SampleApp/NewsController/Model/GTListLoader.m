@@ -12,7 +12,8 @@
 /// 列表请求
 @implementation GTListLoader
 
-- (void)loadListData {
+- (void)loadListDataWithFinishBlock:(GTListLoaderFinishBlock)finishBlock {
+
     // 基本参数配置
     NSString *apiUrl = @"http://v.juhe.cn/toutiao/index";  // 接口请求URL
     NSString *apiKey = @"178a373942ffe6bb886f1b364090b7fd";  // 在个人中心->我的数据,接口名称上方查看
@@ -42,17 +43,6 @@
     NSURL *listURL = components.URL;
     __unused NSURLRequest *listRequest = [NSURLRequest requestWithURL:listURL];
     
-//    NSString *urlString = components.URL.absoluteString;
-//    [[AFHTTPSessionManager manager] GET:urlString parameters:nil headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-//            
-//        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//            NSLog(@"");
-//        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//            NSLog(@"");
-//        }];
-    
-    
-    
     NSURLSession *session = [NSURLSession sharedSession];
     
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:listURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -76,7 +66,13 @@
                     [listItemArray addObject:listItem];
                 }
                 
-                NSLog(@"");
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (finishBlock) {
+                        finishBlock(error == nil, listItemArray.copy);
+                    }
+                });
+                
+          
             } else {
                 // 解析结果异常处理
                 NSLog(@"解析结果异常");
@@ -85,8 +81,7 @@
     }];
     
     [dataTask resume];
-    
-    NSLog(@"");
+
 }
 
 
